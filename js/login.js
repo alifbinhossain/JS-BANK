@@ -10,7 +10,7 @@ document.getElementById("login-btn").addEventListener("click", function () {
 
   //condition to get access your account
   if (userEmail == "abc@gmail.com" && userPassword == "1234") {
-    window.location.href = "../bank.html";
+    window.location.href = "bank.html";
   } else if (userEmail == "") {
     alert("Please enter your email");
   } else if (userPassword == "") {
