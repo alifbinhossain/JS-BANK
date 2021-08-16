@@ -1,0 +1,86 @@
+.form {
+  background-color: rgba(white, 0.6);
+  width: 40%;
+  font-family: inherit;
+  color: inherit;
+  transition: all 0.4s ease;
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2rem 4rem rgba(black, 0.2);
+  z-index: 150;
+  backface-visibility: hidden;
+
+  &:target {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &__user {
+    text-align: center;
+    margin-bottom: 2.5rem;
+
+    &--icon {
+      font-size: 6rem;
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(darkcyan, 0.35),
+        rgba(darkcyan, 0.95)
+      );
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+  }
+
+  // Form Login
+  &__login {
+    padding: 5rem 6rem;
+
+    &--label {
+      display: block;
+      font-size: 1.3rem;
+      margin-left: 0.8rem;
+      margin-bottom: 0.6rem;
+      font-weight: 600;
+    }
+
+    &--input {
+      width: 100%;
+      font-size: 1.5rem;
+      padding: 1.3rem 1.6rem 1rem;
+      background-color: white;
+      border: none;
+      border-radius: 3px;
+      border-bottom: 3px solid transparent;
+      box-shadow: 0 1.5rem 2rem rgba(black, 0.1);
+      transition: all 0.3s;
+      margin-bottom: 2rem;
+
+      &:focus {
+        outline: none;
+        border-bottom: 3px solid #001a33;
+        box-shadow: 0 2rem 4rem rgba(black, 0.2);
+        transition: all 0.3s;
+      }
+
+      &:focus:invalid {
+        border-bottom: 3px solid orangered;
+        transition: all 0.3s;
+      }
+    }
+
+    &--checkbox {
+      margin-right: 0.4rem;
+    }
+  }
+
+  &__bottom {
+    background-color: rgba(white, 0.6);
+    padding: 1.5rem 2rem;
+    width: 100%;
+    border-top: 1px solid darkgrey;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

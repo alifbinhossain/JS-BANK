@@ -1,0 +1,18 @@
+//HEADER
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+//FORM PAGE
+.form-page {
+  min-height: 100vh;
+  background-image: linear-gradient(to right bottom, #73c8a9, #9bc5c3);
+  padding-bottom: 6rem;
+
+  &--1 {
+    position: relative;
+  }
+}

@@ -1,0 +1,217 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  box-sizing: border-box;
+  color: black;
+  padding: 3rem;
+}
+
+.u-center-text {
+  text-align: center;
+}
+
+.btn-login {
+  display: inline-block;
+  border-radius: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  transition: all 0.2s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.1);
+}
+.btn-login__out {
+  color: #fff;
+  text-align: center;
+  padding: 1.3rem 1.6rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+}
+.btn-login__out::after {
+  background-color: darkcyan;
+}
+.btn-login__out::before {
+  background-color: #007272;
+}
+.btn-login__out:hover {
+  color: #fff;
+}
+.btn-login__out:hover:before {
+  width: 100%;
+}
+.btn-login__in {
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 1.3rem 1.6rem;
+  margin-top: 0.8rem;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+.btn-login__in::after {
+  background-color: darkcyan;
+}
+.btn-login__in::before {
+  background-color: #007272;
+}
+.btn-login__in:hover {
+  color: #fff;
+}
+.btn-login__in:hover:before {
+  width: 100%;
+}
+.btn-login__cancel {
+  color: #fff;
+  width: 40%;
+  text-align: center;
+  padding: 0.8rem 1rem;
+  font-size: 1.5rem;
+}
+.btn-login__cancel::after {
+  background-color: red;
+}
+.btn-login__cancel::before {
+  background-color: #990000;
+}
+.btn-login__cancel:hover {
+  color: #fff;
+}
+.btn-login__cancel:hover:before {
+  width: 100%;
+}
+.btn-login:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  z-index: -2;
+}
+.btn-login:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  transition: all 0.3s;
+  border-radius: 4px;
+  z-index: -1;
+}
+.btn-login--text {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  color: black;
+  letter-spacing: 1px;
+}
+
+.form {
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 40%;
+  font-family: inherit;
+  color: inherit;
+  transition: all 0.4s ease;
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+  z-index: 150;
+  backface-visibility: hidden;
+}
+.form:target {
+  visibility: visible;
+  opacity: 1;
+}
+.form__user {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.form__user--icon {
+  font-size: 6rem;
+  background-image: linear-gradient(to right bottom, rgba(0, 139, 139, 0.35), rgba(0, 139, 139, 0.95));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.form__login {
+  padding: 5rem 6rem;
+}
+.form__login--label {
+  display: block;
+  font-size: 1.3rem;
+  margin-left: 0.8rem;
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+}
+.form__login--input {
+  width: 100%;
+  font-size: 1.5rem;
+  padding: 1.3rem 1.6rem 1rem;
+  background-color: white;
+  border: none;
+  border-radius: 3px;
+  border-bottom: 3px solid transparent;
+  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+  margin-bottom: 2rem;
+}
+.form__login--input:focus {
+  outline: none;
+  border-bottom: 3px solid #001a33;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+.form__login--input:focus:invalid {
+  border-bottom: 3px solid orangered;
+  transition: all 0.3s;
+}
+.form__login--checkbox {
+  margin-right: 0.4rem;
+}
+.form__bottom {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 1.5rem 2rem;
+  width: 100%;
+  border-top: 1px solid darkgrey;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-page {
+  min-height: 100vh;
+  background-image: linear-gradient(to right bottom, #73c8a9, #9bc5c3);
+  padding-bottom: 6rem;
+}
+.form-page--1 {
+  position: relative;
+}
+
+/*# sourceMappingURL=style.css.map */

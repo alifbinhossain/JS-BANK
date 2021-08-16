@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- -------------------------- ADD TAILWIND CSS --------------------------- -->
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- ---------------------------- EXTERNEL CSS ----------------------------- -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>JAMUNA-BANK</title>
+  </head>
+  <body>
+    <!-- ----------------------------- LOGIN FORM ------------------------------ -->
+    <section class="form-page form-page--1">
+      <header class="header">
+        <h1 class="text-6xl my-16 text-indigo-900 font-medium">
+          WELCOME TO <span class="font-bold text-blue-50">JAMUNA BANK</span>
+        </h1>
+        <form action="#" class="form" id="form-login">
+          <div class="form__login">
+            <div class="form__user">
+              <i class="fas fa-user form__user--icon"></i>
+            </div>
+
+            <label class="form__login--label" for="email">Email Address</label>
+            <input
+              class="form__login--input"
+              type="text"
+              required
+              placeholder="abc@gmail.com"
+              id="email"
+            />
+
+            <label class="form__login--label" for="password">Password</label>
+            <input
+              class="form__login--input"
+              type="password"
+              required
+              placeholder="password"
+              id="password"
+            />
+
+            <button
+              id="login-btn"
+              href="#login"
+              class="btn-login btn-login__in"
+            >
+              Login
+            </button>
+            <input
+              class="form__login--checkbox"
+              type="checkbox"
+              name="check"
+              id="check"
+            />
+            <label for="check">Remember Me</label>
+          </div>
+
+          <div class="form__bottom">
+            <a id="cancel-btn" href="#" class="btn-login btn-login__cancel"
+              >Cancel</a
+            >
+            <a id="forget-password" href="#" class="btn-login--text"
+              >Forgotten password?</a
+            >
+          </div>
+        </form>
+      </header>
+    </section>
+    <!-- ---------------------------- ADD JS SCRIPT ---------------------------- -->
+    <script src="js/login.js"></script>
+  </body>
+</html>
