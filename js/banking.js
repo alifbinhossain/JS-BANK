@@ -53,8 +53,6 @@ document.getElementById("withdrawl-btn").addEventListener("click", function () {
   let previousBalance = parseFloat(
     document.getElementById("balance-total").innerText
   );
-
-  //conditions to withdraw money
   if (previousBalance > newWithdrawAmount && newWithdrawAmount > 0) {
     updateTotal("withdraw-total", newWithdrawAmount);
     updateBalance(newWithdrawAmount, false);
